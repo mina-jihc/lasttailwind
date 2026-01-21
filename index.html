@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <style>
+    .shorten {
+      background-image: url(images/bg-shorten-mobile.svg);
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
+    .boost {
+      background-image: url(images/bg-boost-mobile.svg);
+      background-repeat: no-repeat;
+    }
+  </style>
+  <body class="flex items-center justify-center pt-8 bg-green-100">
+    <div class="container flex flex-col w-[400px] bg-slate-50 pb-4 px-6 md:w-full">
+      <div class="top px-5 pt-8 flex gap-48">
+        <img src="images/logo.svg" class="w-26 h-7" />
+        <div class="desktop-top hidden gap-6 -ml-34 md:flex">
+          <p>Features</p>
+          <p>Pricing</p>
+          <p>Resources</p>
+        </div>
+        <div class="but-desk hidden gap-6 md:flex ml-170">
+          <button class="hover:text-cyan-400">Login</button>
+          <button class="bg-cyan-400 text-white hover:text-cyan-400 hover:bg-white hover:outline-2 p-1 px-2 font-semibold rounded-full">Sign Up</button>
+        </div>
+        <img src="images/three-lines (1).png" alt="" class="w-10 md:hidden" />
+      </div>
+      <div class="first-top flex flex-col gap-5 text-center items-center
+md:flex-row md:text-left md:items-start md:gap-20">
+  <img
+    src="images/illustration-working.svg"
+    class="w-[400px] md:order-2 md:w-[500px]"
+  />
+
+  <div class="flex flex-col gap-5 items-center md:items-start md:order-1 md:ml-40 md:mt-20">
+    <p class="font-bold text-3xl md:text-5xl">
+      More than just<br />shorter links
+    </p>
+
+    <p class="text-gray-400 font-medium">
+      Build your brand’s recognition and get detailed insights on how
+      your links are performing.
+    </p>
+
+    <button class="font-bold text-white bg-blue-400 rounded-full p-2 w-50">
+      Get Started
+    </button>
+  </div>
+</div>
+      <div
+        class="shorten flex flex-col bg-purple-950 md:w-10/12 md:ml-30 md:flex-row rounded-lg mt-10 p-6 gap-4"
+      >
+        <input
+          type="text"
+          placeholder="Shorten a link here..."
+          class="bg-white rounded-md p-2 text-gray-500 font-medium md:w-[1000px]"
+        />
+        <button class="font-bold text-white bg-blue-400 rounded-md p-2 md:w-40">
+          Shorten It!
+        </button>
+      </div>
+      <div class="advanced mt-20 flex flex-col gap-4 text-center">
+        <p class="font-bold text-3xl">Advanced Statistics</p>
+        <p class="text-gray-400 font-medium">
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+      </div>
+      <div class="cards mt-14 md:flex md:flex-row md:pt-4 md:relative md:pb-40">
+        <div class="card1 flex relative flex-col text-center items-center rounded-md bg-white shadow-md px-6 gap-4 pb-6 pt-18 md:w-[400px]">
+          <div class="img-round bg-purple-950 absolute bottom-50 overflow-hidden rounded-full w-20 h-20 px-4 py-4 md:-ml-60">
+            <img src="images/icon-brand-recognition.svg" class="w-10 h-10" />
+          </div>
+          <p class="font-bold text-2xl">Brand Recognition</p>
+          <p class="text-gray-400 font-medium">
+            Boost your brand recognition with each click. Generic links don’t
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
+        </div>
+        <p class="tayaq bg-cyan-400 w-2 h-18 ml-43 md:w-14 md:h-2 md:mt-25 md:-ml-1"></p>
+        <div class="card2 flex relative flex-col text-center items-center rounded-md bg-white shadow-md px-6 gap-4 pb-6 pt-18 md:absolute md:top-18 md:left-[450px] md:w-[400px]">
+          <div class="img-round bg-purple-950 absolute bottom-50 overflow-hidden rounded-full w-20 h-20 px-4 py-4 md:-ml-60">
+            <img src="images/icon-detailed-records.svg" class="w-10 h-10" />
+          </div>
+          <p class="font-bold text-2xl">Detailed Records</p>
+          <p class="text-gray-400 font-medium">
+            Gain insights into who is clicking your links. Knowing when and where 
+  people engage with your content helps inform better decisions.
+          </p>
+        </div>
+        <p class="bg-cyan-400 w-2 h-18 ml-43 md:w-12 md:h-2 md:mt-50 md:ml-100"></p>
+        <div class="card3 flex relative flex-col text-center items-center rounded-md bg-white shadow-md px-6 gap-4 pb-6 pt-18 md:mt-40 md:absolute md:top-1 md:left-[900px] md:w-[400px]">
+          <div class="img-round bg-purple-950 absolute bottom-50 overflow-hidden rounded-full w-20 h-20 px-4 py-4 md:-ml-60">
+            <img src="images/icon-fully-customizable.svg" class="w-10 h-10" />
+          </div>
+          <p class="font-bold text-2xl">Fully Customizable</p>
+          <p class="text-gray-400 font-medium">
+             Improve brand awareness and content discoverability through customizable 
+  links, supercharging audience engagement.
+          </p>
+        </div>
+      </div>
+      <div class="boost py-30 px-4 flex flex-col text-center md:items-center md:gap-7 md:py-10 gap-4 bg-purple-900 mt-20">
+        <h1 class="font-bold text-3xl text-white">Boost your links today</h1>
+        <button class="bg-cyan-400 py-3 md:w-40 font-bold cursor-pointer text-white rounded-full hover:text-cyan-400 hover:bg-white">Get Started</button>
+      </div>
+      <footer class="bg-gray-800 py-10 flex flex-col items-center md:flex-row md:gap-50 md:px-10">
+        <p class="text-white text-4xl font-bold">Shortly</p>
+        <div class="soz-footer flex flex-col gap-4 text-center pt-10">
+        <p class="text-white font-bold">Features</p>
+        <p class="text-gray-300 font-semibold">Link Shortening</p>
+        <p class="text-gray-300 font-semibold">Branded Links</p>
+        <p class="text-gray-300 font-semibold">Analytics</p>
+        </div>
+        <div class="soz-footer flex flex-col gap-4 text-center pt-10">
+        <p class="text-white font-bold">Resources</p>
+        <p class="text-gray-300 font-semibold">Blog</p>
+        <p class="text-gray-300 font-semibold">Developers</p>
+        <p class="text-gray-300 font-semibold">Support</p>
+        </div>
+        <div class="soz-footer flex flex-col gap-4 text-center pt-10">
+        <p class="text-white font-bold">Company</p>
+        <p class="text-gray-300 font-semibold">About</p>
+        <p class="text-gray-300 font-semibold"> Our Team</p>
+        <p class="text-gray-300 font-semibold">Careers</p>
+        <p class="text-gray-300 font-semibold">Contact</p>
+        </div>
+        <div class="logos flex pt-10 gap-6">
+          <img src="images/icon-facebook.svg" alt="">
+          <img src="images/icon-twitter.svg" alt="">
+          <img src="images/icon-pinterest.svg" alt="">
+          <img src="images/icon-instagram.svg" alt="">
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
